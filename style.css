@@ -286,7 +286,8 @@ footer {
 .about-title {
     font-size: 42px;
     margin-bottom: 40px;
-    position: center;
+    position: relative;
+    text-align: center; 
 }
 
 /* Underline effect */
@@ -296,7 +297,7 @@ footer {
     height: 3px;
     background: #4cc9f0;
     display: block;
-    margin: 10px auto;
+    margin: 10px auto;   /* ✅ centers underline */
 }
 
 /* Container */
