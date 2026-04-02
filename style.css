@@ -37,14 +37,31 @@ header {
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+/* ===== NAVBAR LINKS UPGRADE ===== */
+
 nav a {
+    position: relative;
     color: #ccc;
-    transition: 0.3s;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 12px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s ease;
 }
 
+/* HOVER EFFECT */
 nav a:hover {
-    color: #00eaff;
-    text-shadow: 0 0 10px #00eaff;
+    color: #fff;
+    background: rgba(76, 201, 240, 0.1);
+    box-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+}
+
+/* ACTIVE PAGE */
+nav a.active {
+    color: #000;
+    background: linear-gradient(90deg, #00eaff, #4cc9f0);
+    box-shadow: 0 0 15px rgba(76, 201, 240, 0.8);
 }
 /* Mobile Menu */
 .menu-btn {
