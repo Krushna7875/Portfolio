@@ -447,31 +447,57 @@ section {
 @keyframes load {
     from { width: 0; }
 }
-.projects-title {
-    font-size: 42px;
-    margin-bottom: 50px;
+/* ===== PREMIUM PROJECT HEADER ===== */
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 60px;
     position: relative;
-    display: inline-block;
 }
 
-.projects-title {
-    font-size: 42px;
-    margin-bottom: 50px;
+/* MAIN TITLE */
+.projects-header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
     position: relative;
     display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    box-shadow: 
+        0 0 15px rgba(76, 201, 240, 0.3),
+        inset 0 0 10px rgba(76, 201, 240, 0.2);
 }
 
-.projects-title::after {
+/* GLOW ANIMATION */
+.projects-header h1::before {
     content: "";
-    width: 0%;
-    height: 3px;
-    background: #4cc9f0;
     position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.4s;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00eaff, #4cc9f0, #9b59b6);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0.5;
 }
 
-.projects-title:hover::after {
-    width: 100%;
+/* SUBTEXT */
+.projects-header p {
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* FLOAT EFFECT */
+.projects-header h1:hover {
+    transform: translateY(-5px) scale(1.03);
+    transition: 0.3s ease;
 }
