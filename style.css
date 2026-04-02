@@ -1,7 +1,7 @@
 body {
-    background: linear-gradient(135deg, #0a0f24, #1a1f35);
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Reset */
@@ -10,12 +10,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-}
-
-/* Body */
-body {
-    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-    color: #fff;
 }
 
 /* Header */
@@ -200,4 +194,82 @@ footer {
     box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
 
     transition: 0.5s ease;
+}
+/* ================= PROJECT SECTION ================= */
+
+.projects-section {
+    padding: 120px 8% 60px;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.project-card h2 {
+    margin-bottom: 10px;
+    color: #4cc9f0;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.6);
+}
+
+/* Buttons */
+.project-buttons {
+    margin-top: 15px;
+}
+
+.project-buttons .btn {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    background: #4cc9f0;
+    color: #000;
+    transition: 0.3s;
+}
+
+.project-buttons .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4cc9f0;
+}
+
+.project-buttons .secondary {
+    background: transparent;
+    border: 1px solid #4cc9f0;
+    color: #4cc9f0;
+}
+
+.project-buttons .secondary:hover {
+    background: #4cc9f0;
+    color: #000;
 }
