@@ -448,28 +448,23 @@ section {
     from { width: 0; }
 }
 .projects-title {
-    font-size: 48px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 40px;
-
-    background: linear-gradient(90deg, #00eaff, #4cc9f0, #9b59b6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    letter-spacing: 2px;
+    font-size: 42px;
+    margin-bottom: 50px;
     position: relative;
+    display: inline-block;
 }
 
-/* Glow effect */
 .projects-title::after {
-    content: "My Projects";
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #4cc9f0;
     position: absolute;
     left: 0;
-    top: 0;
-    z-index: -1;
+    bottom: -10px;
+    transition: 0.4s;
+}
 
-    color: #4cc9f0;
-    filter: blur(12px);
-    opacity: 0.6;
+.projects-title:hover::after {
+    width: 100%;
 }
