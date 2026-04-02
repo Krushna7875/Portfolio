@@ -276,8 +276,10 @@ footer {
 /* ================= ABOUT PAGE ================= */
 
 .about-section {
-    padding: 140px 8% 80px;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Title */
@@ -301,6 +303,7 @@ footer {
 .about-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Card */
@@ -363,4 +366,8 @@ footer {
 .about-buttons .secondary:hover {
     background: #4cc9f0;
     color: #000;
+}
+/* Fix for all pages */
+section {
+    padding-top: 120px;
 }
