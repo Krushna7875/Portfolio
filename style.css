@@ -371,44 +371,57 @@ footer {
 section {
     padding-top: 120px;
 }
+/* ===== NEW SKILLS DESIGN ===== */
+
 .skills-section {
     min-height: 100vh;
-    padding: 120px 8%;
+    padding: 140px 8% 60px;
     text-align: center;
 }
-.skills-section h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
+
+.skills-title {
+    font-size: 42px;
+    margin-bottom: 50px;
 }
 
 /* GRID */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 /* CARD */
-.skill-card {
+.skill-box {
     background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.08);
     transition: 0.3s;
+    text-align: left;
 }
 
-.skill-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+.skill-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
 }
 
 /* TEXT */
-.skill-card h3 {
+.skill-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4cc9f0;
+}
+
+.skill-box p {
+    font-size: 14px;
+    color: #ccc;
     margin-bottom: 15px;
 }
 
-/* PROGRESS BAR */
-.progress-bar {
+/* BAR */
+.bar {
     width: 100%;
     height: 8px;
     background: #222;
@@ -416,15 +429,21 @@ section {
     overflow: hidden;
 }
 
-.progress {
+.bar span {
+    display: block;
     height: 100%;
     border-radius: 10px;
+    animation: load 2s ease forwards;
 }
 
-/* INDIVIDUAL SKILLS */
-.html { width: 85%; background: #ff4d5a; }
-.cpp { width: 75%; background: #4cafef; }
-.python { width: 70%; background: #ffd43b; }
-.sql { width: 65%; background: #00c896; }
-.git { width: 80%; background: #f1502f; }
-.design { width: 90%; background: #9b59b6; }
+/* COLORS + WIDTH */
+.html { width: 85%; background: linear-gradient(90deg, #00eaff, #4cc9f0); }
+.programming { width: 75%; background: linear-gradient(90deg, #ff4d5a, #ff7b89); }
+.db { width: 65%; background: linear-gradient(90deg, #00c896, #00f5a0); }
+.tools { width: 80%; background: linear-gradient(90deg, #f7971e, #ffd200); }
+.design { width: 90%; background: linear-gradient(90deg, #9b59b6, #e056fd); }
+
+/* ANIMATION */
+@keyframes load {
+    from { width: 0; }
+}
