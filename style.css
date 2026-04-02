@@ -447,3 +447,29 @@ section {
 @keyframes load {
     from { width: 0; }
 }
+.projects-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+
+    background: linear-gradient(90deg, #00eaff, #4cc9f0, #9b59b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Glow effect */
+.projects-title::after {
+    content: "My Projects";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    color: #4cc9f0;
+    filter: blur(12px);
+    opacity: 0.6;
+}
