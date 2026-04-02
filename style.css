@@ -273,3 +273,94 @@ footer {
     background: #4cc9f0;
     color: #000;
 }
+/* ================= ABOUT PAGE ================= */
+
+.about-section {
+    padding: 140px 8% 80px;
+    text-align: center;
+}
+
+/* Title */
+.about-title {
+    font-size: 42px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Underline effect */
+.about-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #4cc9f0;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Container */
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.about-card {
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
+
+/* Hover */
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(76, 201, 240, 0.5);
+}
+
+/* Text */
+.about-card p {
+    font-size: 16px;
+    color: #ccc;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* Highlight name */
+.about-card span {
+    color: #4cc9f0;
+    font-weight: 600;
+}
+
+/* Buttons */
+.about-buttons {
+    margin-top: 20px;
+}
+
+.about-buttons .btn {
+    padding: 10px 22px;
+    border-radius: 25px;
+    margin: 5px;
+    text-decoration: none;
+    background: #4cc9f0;
+    color: #000;
+    transition: 0.3s;
+}
+
+.about-buttons .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #4cc9f0;
+}
+
+.about-buttons .secondary {
+    background: transparent;
+    border: 1px solid #4cc9f0;
+    color: #4cc9f0;
+}
+
+.about-buttons .secondary:hover {
+    background: #4cc9f0;
+    color: #000;
+}
